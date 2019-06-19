@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: inline-block;
+}
+.bar__logo{
+    float: left;
+}
+.bar__logo::first-letter{
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 30px;    
+    color: #1abc9c;
+}
+.logo__link{
+    font-family: "Roboto";
+    font-size: 30px;    
+    text-decoration: none;
+    color: black;
+    font-weight: normal;    
+}
+
+.nav__list
+{
+    float: right;
+    font-size: 20px;  
+}
+.nav__item { 
+    display: inline-block;
+}
+.nav__link{
+    font-size: 15px;  
+}
+.navigation{
+    margin-top:36px;
+}
