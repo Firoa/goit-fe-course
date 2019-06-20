@@ -98,14 +98,13 @@ ul{
 .product__item
 {
     float: left;
-    display:block;
+    display:inline-block;
     width: 255px;
     height: 322px;
     box-sizing: content-box;
     border: 1px solid green;
     margin: 10px 10px;
     background-color: #e9f0fd;
-
 }
 
 .img__wrapper{
@@ -121,14 +120,35 @@ h3, h4 {
     color: #ffffff;
     font-family: "Roboto";
     font-weight: 900;
-    text-align: center;
-    display: inline-block;
+    box-sizing: border-box;
+    display: inline-block;    
+    height: 40px;
+    width: 200px;    
+    vertical-align: middle;
+    padding: 10px 40px 10px 10px;
+    text-align: left;
 }
 h4{
-    background: #8c8c8c;
+    background: #8c8c8c;    
+    box-sizing: border-box;
+    height: 40px;
+    width: 55px;  
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px 10px 10px;
 }
+
 .product__description{
     width: 255px;
     height: 40px;
     background-color:#323232;
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 0px;
+    vertical-align: middle;
+    text-align: left;
+}
+.product__item >:hover
+{
+    background-color: #4ec6ab;    
 }
