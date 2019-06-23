@@ -63,9 +63,12 @@ ul{
     color: #1abc9c;
 }
 /* Information bar end */
+
+
 /* Navigation section end */
 .products__area{
-    text-align: center;    
+    text-align: center;   
+    margin-bottom: 70px; 
 }
 .product__title{
     text-transform: uppercase;
@@ -87,12 +90,13 @@ ul{
     width: 1110px;
     height:674px;   
     box-sizing: content-box;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: block;
     margin: 0px 245px;
 }
-.products__list{
-    tab-size: 0px;
+.products__list
+{
+    font-size: 0px;
     text-align: center;
 }
 .product__item
@@ -102,15 +106,30 @@ ul{
     width: 255px;
     height: 322px;
     box-sizing: content-box;
-    border: 1px solid green;
-    margin: 10px 10px;
+    /* border: 1px solid green; */
+    margin: 0px 30px 30px 0px;
     background-color: #e9f0fd;
 }
-
+.product__item:nth-of-type(4n)
+{
+    margin: 0px 0px 30px 0px;
+}
+.product__item:not(:nth-last-of-type(n+4))
+{
+    margin-bottom: 0px;
+}
 .img__wrapper{
     width: 255px;
+    height: 282px;   
+    text-align: center;
+    overflow: hidden;
+}
+.img_p
+{    
+    object-fit: contain;
+    width: 255px;
     height: 282px;
-    object-fit: cover;
+    vertical-align: middle;
 }
 
 h3, h4 {
@@ -141,14 +160,132 @@ h4{
 .product__description{
     width: 255px;
     height: 40px;
-    background-color:#323232;
+    background-color:#4ec6ab;
+    background-color:rgba(0, 0%, 0%, 0);
     vertical-align: bottom;
     display: inline-block;
     font-size: 0px;
     vertical-align: middle;
     text-align: left;
 }
-.product__item >:hover
-{
-    background-color: #4ec6ab;    
+
+.product__item:hover .product__name{
+    background-color:rgba(50, 50, 50, 0.19);   
 }
+.product__item:hover .product__price{
+    background-color:rgba(140, 140, 140, 0.19);   
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!News area!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.news__area
+{
+    text-align: center;
+}
+.news__title
+{   
+    font-size: 48px;   
+    color: #555252;
+    font-family: "Roboto";
+    font-weight: 900;    
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+.second_rectang{
+    margin-bottom: 80px;
+}
+.articles__block{
+    height:500px;
+    width: 1110px;
+    box-sizing: content-box;
+    /* border: 1px solid green; */
+    display: block;
+    text-align: center;
+    margin: 0px 245px;
+}
+
+.articles__list{
+    text-align: center;
+    font-size: 0px;
+
+}
+.acticle__item{
+    float: left;
+    display: inline-block;
+    box-sizing: content-box;
+    height: 500px;
+    width: 350px;
+   
+    background-color: #e9f0fd;
+    margin-right: 30px;
+}
+.acticle__item:last-child{
+    margin-right: 0px;
+}
+
+.img__block{
+    margin-bottom: 14px;
+}
+
+.news__img__wrapper{
+    width: 350px;
+    height: 262px;
+    object-fit: cover;
+}
+
+.article__header{
+    display: block;
+    box-sizing: content-box;
+    height: 44px;
+    width: 350px;
+    font-size: 18px;    
+    color: #555252;
+    font-family: "Open Sans";
+    font-weight: 600;
+    text-align: left;
+    line-height: 26px;
+    margin-bottom: 13px;
+}
+
+.article__rectangle{
+    width: 136px;
+    height: 3px;
+    background-color:#4ec6ab;
+    margin-bottom: 26px;
+}
+.piece__article
+{
+    display: block;
+    box-sizing: content-box;
+    height: 66px;
+    width: 350px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #555252;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.button__set
+{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 159px;
+    height: 51px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.39);
+    background-color: #4ec6ab;
+
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 300;
+    text-align: center;
+}
+
+
