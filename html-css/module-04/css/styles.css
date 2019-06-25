@@ -20,7 +20,7 @@ ul{
 }
 /* Navigation section start */
 .header{
-    /* width: 1110px; */
+   
     text-align: center;    
     vertical-align: top;      
 }
@@ -82,8 +82,9 @@ ul{
     font-size: 48px;
     color: rgba(81, 81, 81, 255);
     margin-bottom: 25px;
-    display:block;  
+    display:inline-block;  
     overflow: hidden;   
+    text-align: center;   
 }
 
 .product__title::after{
@@ -216,6 +217,7 @@ h4{
     font-weight: 900;    
     text-transform: uppercase;
     margin-bottom: 27px;
+    display:inline-block;  
 }
 
 .news__title::after{
