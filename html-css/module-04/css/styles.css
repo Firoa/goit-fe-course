@@ -20,26 +20,22 @@ ul{
 }
 /* Navigation section start */
 .header{
-    width: 1110px;
+    /* width: 1110px; */
     text-align: center;    
     vertical-align: top;      
 }
 .navigation{
     margin-top:36px;
     margin-bottom: 40px;
-    vertical-align: top;
-    text-align: center;
+    vertical-align: top; 
+    width: 1110px;
+    margin-left: 245px;  
 }
 /* Logo start */
 .bar__logo{
     float: left;
 }
-.bar__logo::first-letter{
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 30px;    
-    color: #1abc9c;
-}
+
 .logo__link{
     font-family: "Roboto";
     font-size: 30px;    
