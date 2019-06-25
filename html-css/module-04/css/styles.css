@@ -9,7 +9,8 @@ ul{
 }
 .container{
     width: 1600px;
-    margin: 0 auto;     
+    margin: 0 auto;   
+    text-align: center;  
 }
 
 .clearfix::after {
@@ -18,6 +19,12 @@ ul{
     display: inline-block;
 }
 /* Navigation section start */
+.header{
+    width: 1110px;
+    text-align: center;
+    margin-left: 245px; 
+    vertical-align: top;   
+}
 .navigation{
     margin-top:36px;
     margin-bottom: 40px;
@@ -45,7 +52,9 @@ ul{
 .nav__list
 {
     float: right;
-    font-size: 20px;  
+    font-size: 20px;
+    margin-right: 0px;
+    display: inline-block;  
 }
 .nav__item { 
     display: inline-block;    
@@ -57,7 +66,7 @@ ul{
     color: black;
     font-family: "Open Sans";
     font-weight: 700;
-    transform: uppercase;
+    text-transform: uppercase;
 }
 .nav__link:hover {
     color: #1abc9c;
@@ -68,7 +77,8 @@ ul{
 /* Navigation section end */
 .products__area{
     text-align: center;   
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
+     
 }
 .product__title{
     text-transform: uppercase;
@@ -76,8 +86,28 @@ ul{
     font-size: 48px;
     color: rgba(81, 81, 81, 255);
     margin-bottom: 25px;
+    display:block;  
+    overflow: hidden;   
 }
 
+.product__title::after{
+    display: block;
+    vertical-align: middle;    
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 90px;
+    margin-top: 25px;
+    transition-duration: 0.9s;
+}
+.products__area:hover .product__title::after
+{
+    width: 264px;
+}
 .line__rectang {
     display: block;    
     width: 164px;
@@ -190,9 +220,27 @@ h4{
     text-transform: uppercase;
     margin-bottom: 27px;
 }
-.second_rectang{
-    margin-bottom: 80px;
+
+.news__title::after{
+    display: block;
+    vertical-align: middle;    
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 90px;
+    margin-top: 25px;
+    transition-duration: 0.9s;
 }
+
+.news__area:hover .news__title::after
+{
+    width: 264px;
+}
+
 .articles__block{
     height:500px;
     width: 1110px;
@@ -246,12 +294,16 @@ h4{
     margin-bottom: 13px;
 }
 
-.article__rectangle{
+.article__header::after{
+    display: block;
+    vertical-align: middle;    
+    content: "";
     width: 136px;
     height: 3px;
     background-color:#4ec6ab;
-    margin-bottom: 26px;
+    margin-bottom: 26px;   
 }
+
 .piece__article
 {
     display: block;
