@@ -21,14 +21,14 @@ ul{
 /* Navigation section start */
 .header{
     width: 1110px;
-    text-align: center;
-    margin-left: 245px; 
-    vertical-align: top;   
+    text-align: center;    
+    vertical-align: top;      
 }
 .navigation{
     margin-top:36px;
     margin-bottom: 40px;
     vertical-align: top;
+    text-align: center;
 }
 /* Logo start */
 .bar__logo{
