@@ -174,8 +174,8 @@ h3, h4 {
     height: 40px;
     width: 200px;    
     vertical-align: middle;
-    padding: 10px 40px 10px 10px;
-    text-align: left;
+    /* padding: 10px 40px 10px 10px; */
+    text-align: center;
 }
 h4{
     background: #8c8c8c;    
@@ -184,7 +184,7 @@ h4{
     width: 55px;  
     display: inline-block;
     vertical-align: middle;
-    padding: 10px 20px 10px 10px;
+    /* padding: 10px 20px 10px 10px; */
 }
 
 .product__description{
@@ -197,6 +197,7 @@ h4{
     font-size: 0px;
     vertical-align: middle;
     text-align: left;
+    line-height: 40px;
 }
 
 .product__item:hover .product__name{
