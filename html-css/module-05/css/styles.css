@@ -1,0 +1,260 @@
+.container {
+  width: 1140px;
+  height: auto;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation section */
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.nav__item {
+  width: 100px;
+  text-align: center;
+}
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Open Sans";
+}
+.nav__item:hover .nav__link {
+  color: #1abc9c;
+}
+
+/* Slider section */
+.slider {
+  max-width: 1800px;
+  height: 600px;
+  background-image: url("../img/slide_picture_1.jpg");
+  position: relative;
+}
+.slider__nav {
+  position: absolute;
+  width: 1110px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.slide__tittle {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+}
+.main__tittle {
+  font-size: 60px;
+  line-height: 82px;
+  font-weight: 900;
+}
+.low__tittle {
+  font-size: 30px;
+  font-weight: 300px;
+}
+
+.left__button__wrapper,
+.right__button__wrapper {
+  width: 104px;
+  height: 104px;
+  overflow: hidden;
+  position: relative;
+}
+
+.button {
+  width: 104px;
+  height: 104px;
+  background: #1abc9c;
+  opacity: 0.5;
+}
+.button__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  opacity: 0.9;
+}
+
+.right__button__wrapper:hover > .button {
+  opacity: 0.8;
+}
+.left__button__wrapper:hover > .button {
+  opacity: 0.8;
+}
+
+/* Shop area */
+.shop__area {
+  margin-top: 100px;
+  position: relative;
+  height: 580px;
+}
+
+.shop__tittle {
+  font-size: 48px;
+  line-height: 32px;
+  color: #515151;
+  font-family: "Roboto";
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.shop__tittle::after {
+  display: block;
+  content: "";
+  width: 164px;
+  height: 7px;
+  background-color: #4ec6ab;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 90px;
+  margin-top: 25px;
+}
+
+.shop__cards {
+  width: 1110px;
+  height: 322px;
+  box-sizing: content-box;
+  border: 1px solid red;
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+.card {
+  width: 255px;
+  height: 322px;
+  border: 1px solid green;
+  background-color: #4ec6ab;
+  position: relative;
+}
+.card__img {
+  width: 255px;
+  height: 282px;
+}
+
+.card__name,
+.card__price {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 900;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+}
+.card__name {
+  width: 200px;
+  background: #323232;
+}
+.card__price {
+  width: 55px;
+  background: #8c8c8c;
+}
+
+.card:hover .card__name {
+  background-color: rgba(50, 50, 50, 0.19);
+}
+.card:hover .card__price {
+  background-color: rgba(140, 140, 140, 0.19);
+}
+
+.rect__menu {
+  display: block;
+  box-sizing: border-box;
+  display: none;
+  width: 255px;
+  height: 282px;
+  border: 10px solid rgba(255, 255, 255, .7);
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+  opacity: 1;
+  text-align: center; 
+  background-clip: content-box;
+  z-index: 1;
+}
+
+.like__button,
+.arrows__button,
+.time__button,
+.add__cart__button {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #ffffff;
+}
+
+.like__button,
+.arrows__button,
+.time__button{
+margin: 38px 5px 10px 5px;
+background: transparent;
+}
+
+.add__cart__button {
+  width: 170px;
+  height: 50px;  
+  display: inline-block;
+  background-color: #323232;  
+  vertical-align: middle;
+}
+
+.cart__tittle {
+  font-size: 14px;
+  line-height: 50px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button_img_card {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;   
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+.card:hover .rect__menu{ 
+opacity: .5;
+display: block;
+}
