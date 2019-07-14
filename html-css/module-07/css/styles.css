@@ -1,0 +1,233 @@
+body {
+  min-width: 100vh;
+  /* margin: 0 auto; */
+}
+
+textarea {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.navigation {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 100px;
+}
+.logo__link {
+}
+.logo__img {
+  display: inline;
+  height: 28px;
+  width: 86px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 485px;
+}
+
+.nav__items {
+}
+
+.nav__link {
+  font-size: 14px;
+  /* line-height: 41px; */
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__items:hover .nav__link {
+  color: #fed136;
+}
+
+.services__area {
+  height: 557px;
+  text-align: center;
+}
+.services__tittle {
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 75px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.notes {
+  font-size: 16px;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service__boxes {
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__box {
+  width: 290px;
+  height: 270px;
+  text-align: center;
+}
+.box__img__wrapper {
+  height: 107px;
+  width: 290px;
+  text-align: center;  
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 107px;
+}
+.border__img {
+  height: 70px;
+  width: 70px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  display: inline-block;  
+  line-height: 70px;
+}
+.box__img { 
+  height: auto;
+  width: auto;
+  display: inline-block; 
+}
+
+.box__tittle {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 75px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.box__descrip {
+  width: 280px;
+  height: 58px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  text-align: center;
+}
+.feedback__section {
+  height: 625px;
+  width: 100%;
+  margin: 0 0;
+  background-image: url("../img/Map-image.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto auto;
+  background-color: #222222;
+  text-align: center;
+}
+.feedback__tittle {
+  font-size: 40px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding-top:  108px;
+  margin-bottom: 20px;
+}
+
+.fb__descrip {
+  font-size: 16px;
+  color: #777777;
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 54px;
+}
+.form {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 320px;
+  width: 940px;
+}
+
+.feft__side {
+  width: 455px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.left__input {
+  width: 455px;
+  height: 34px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: solid 4px transparent;
+}
+
+.left__input:focus:valid{
+    border: solid 4px #fed136;
+}
+.left__input:focus:invalid{
+    border: solid 4px red;
+}
+.right__side {
+  width: 455px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right__input {
+  display: block;
+  width: 455px;
+  height: 225px;  
+}
+
+textarea:focus:valid{
+    border: solid 4px #fed136;
+}
+textarea:focus:invalid{
+    border: solid 4px red;
+}
+
+.submit__button {
+  width: 240px;
+  height: 66px;
+  background: #fed136;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+}
