@@ -1,9 +1,9 @@
 body {
-  background-image: url("../img/mob_banner.png");
+  /* background-image: url("../img/mob_banner.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto auto;
-  background-color: #222222;
+  background-color: #222222; */
 }
 img {
   width: 100%;
@@ -13,7 +13,7 @@ img {
 }
 
 .container {
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -21,6 +21,8 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-bottom: 118px;
+  margin-top: 20px;
 }
 
 .log__in,
@@ -49,12 +51,24 @@ img {
 }
 
 .tittle__section {
+  background-image: url("../img/mob_banner.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto auto;
+  background-color: #222222;
   text-align: center;
-  height: 230px;
-  margin-top: 118px;
-  margin-bottom: 147px;
+  height: 530px; 
+  margin-bottom: 0px;
 }
 
+
+.switch__box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
 .ts__tittle {
   font-size: 20px;
   letter-spacing: 1px;
@@ -66,14 +80,16 @@ img {
   text-transform: uppercase;
 }
 .ts__tittle__second {
-  margin: auto 0;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  max-width: 290px;
   font-size: 30px;
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 700;
   text-align: center;
   margin-bottom: 18px;
+  text-transform: uppercase;
 }
 
 .ts__text {
@@ -82,6 +98,8 @@ img {
   font-family: "Roboto";
   font-weight: 300;
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .ts__button {
@@ -97,6 +115,7 @@ img {
 .chouse__section {
   background-color: #fff;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .cs__tittle {
@@ -182,4 +201,100 @@ img {
   font-family: "Montserrat";
   font-weight: 700;
   text-align: center;
+}
+
+
+@media (min-width:768px){
+  .container{
+    min-width: 768px;
+  }
+  .tittle__section {
+    background-image: url("../img/tabl_banner.png");    
+    height: 700px;    
+  }
+  .switch__box
+  {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;   
+    justify-content: space-between;
+    width: 668px;
+    margin-bottom: 147px;  
+    margin-top: 40px;  
+  }
+  .navigation {   
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .ts__tittle { 
+    margin-bottom: 0px;    
+  }
+
+  .ts__tittle__second {    
+    font-size: 52px;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;   
+    font-weight: 700; 
+  }
+  .ts__text {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin: 0 auto;   
+    margin-bottom: 25px;
+  }
+  
+  .boxes__area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 520px;
+    width: 490px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .first__box{
+    order: 1;
+  }
+  .second__box{
+    order: 3;
+  }
+  .third__box{
+    order: 2;
+  }
+  .last__box
+  {
+    order: 4;
+  }
+}
+
+@media (min-width:1200px)
+{
+  .container{
+    min-width: 1200px;
+  }
+  .tittle__section {
+    background-image: url("../img/des-foto.png");       
+  }
+  .ts__tittle__second{
+    width: 510px;
+  }
+  .boxes__area {    
+    flex-direction: row;
+    flex-wrap: nowrap;   
+    align-items: center;
+    height: 265px;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
 }

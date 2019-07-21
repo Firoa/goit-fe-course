@@ -7,7 +7,7 @@ textarea {
   font-size: 14px;
   letter-spacing: 0px;
   color: #bbbbbb;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 2px;
@@ -47,7 +47,7 @@ textarea {
   font-size: 14px;
   /* line-height: 41px; */
   color: #222222;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -67,14 +67,14 @@ textarea {
   letter-spacing: -1px;
   line-height: 75px;
   color: #222222;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-bottom: 18px;
 }
 .notes {
   font-size: 16px;
   color: #777777;
-  font-family: "Droid Serif";
+  font-family: "Droid Serif", sans-serif;
   font-weight: 400;
   font-style: italic;
   text-align: center;
@@ -120,7 +120,7 @@ textarea {
   letter-spacing: 0px;
   line-height: 75px;
   color: #222222;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 .box__descrip {
@@ -129,7 +129,7 @@ textarea {
   font-size: 14px;
   letter-spacing: 0px;
   color: #777777;
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 400;
   text-align: center;
 }
@@ -148,7 +148,7 @@ textarea {
   font-size: 40px;
   letter-spacing: -1px;
   color: #ffffff;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   padding-top:  108px;
   margin-bottom: 20px;
@@ -157,7 +157,7 @@ textarea {
 .fb__descrip {
   font-size: 16px;
   color: #777777;
-  font-family: "Droid Serif";
+  font-family: "Droid Serif", sans-serif;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 54px;
@@ -185,7 +185,7 @@ textarea {
   font-size: 14px;
   letter-spacing: 0px;
   color: #bbbbbb;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 2px;
@@ -224,7 +224,7 @@ textarea:focus:invalid{
   background: #fed136;
   font-size: 18px;
   color: #ffffff;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
