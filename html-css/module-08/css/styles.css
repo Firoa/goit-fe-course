@@ -1,10 +1,4 @@
-body {
-  /* background-image: url("../img/mob_banner.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto auto;
-  background-color: #222222; */
-}
+
 img {
   width: 100%;
   height: auto;
@@ -14,6 +8,7 @@ img {
 
 .container {
   min-width: 320px;
+  
   margin: 0 auto;
 }
 
@@ -56,6 +51,7 @@ img {
   background-position: center top;
   background-size: auto auto;
   background-color: #222222;
+  background-size: cover; 
   text-align: center;
   height: 530px; 
   margin-bottom: 0px;
@@ -206,7 +202,8 @@ img {
 
 @media (min-width:768px){
   .container{
-    min-width: 768px;
+    /* min-width: 768px;   */
+    width: 100%;
   }
   .tittle__section {
     background-image: url("../img/tabl_banner.png");    
