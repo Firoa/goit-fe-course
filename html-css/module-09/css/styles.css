@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .container{
   margin: 0 auto;
   min-width: 320px
@@ -56,8 +63,7 @@
 }
 
 .ts__tittle {
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 20px;  
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 700;
@@ -65,53 +71,7 @@
   margin-bottom: 35px;
   text-transform: uppercase;  
 }
-
-
-
-/* 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.container {
-  min-width: 320px;
-  
-  margin: 0 auto;
-}
-
-
-
-
-
-
-.tittle__section {
-  background-image: url("../img/mob_banner.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto auto;
-  background-color: #222222;
-  background-size: cover; 
-  text-align: center;
-  height: 530px; 
-  margin-bottom: 0px;
-}
-
-
-.switch__box{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  
-}
-
-.ts__tittle__second {
-  display: block;
-  margin: 0 auto;
-  max-width: 290px;
+.ts__tittle__second { 
   font-size: 30px;
   color: #ffffff;
   font-family: "Montserrat";
@@ -126,13 +86,9 @@ img {
   color: #ffffff;
   font-family: "Roboto";
   font-weight: 300;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
+  text-align: center; 
 }
-
-.ts__button {
-  width: 240px;
+.ts__button { 
   height: 40px;
   margin-top: 20px;
   color: #fff;
@@ -141,14 +97,16 @@ img {
   border-radius: 20px;
 }
 
+/* Chouse section */
+
 .chouse__section {
   background-color: #fff;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 70px;
 }
 
-.cs__tittle {
-  padding: 70px 30px 0 30px;
+.cs__tittle {  
   font-size: 22px;
   color: #333333;
   font-family: "Montserrat";
@@ -156,20 +114,17 @@ img {
   text-align: center;
   margin-bottom: 16px;
 }
-
-.boxes__area {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.boxes__area {  
   align-items: center;
-  height: 940px;
+  height: 1000px;
   margin-bottom: 10px;
 }
 
 .box {
-  height: 210px;
+  height: 236px;
   width: 210px;
-  text-align: center;
+  text-align: center; 
+  overflow: hidden;
 }
 
 .box__img__wrapper {
@@ -219,7 +174,7 @@ img {
 }
 
 .cs__button {
-  display: inline-block;
+  display: block;
   min-width: 240px;
   height: 40px;
   color: #ff4e50;
@@ -232,22 +187,14 @@ img {
   text-align: center;
 }
 
-
-@media (min-width:768px){
-  .container{    
-    width: 100%;
-  }
+@media (min-width:768px){ 
   .tittle__section {
     background-image: url("../img/tabl_banner.png");    
     height: 700px;    
   }
   .switch__box
-  {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    align-items: center;   
-    justify-content: space-between;
-    width: 668px;
+  {      
+    max-width: 668px;
     margin-bottom: 147px;  
     margin-top: 40px;  
   }
@@ -255,53 +202,37 @@ img {
     margin-bottom: 0px;
     margin-top: 0px;
   }
+
+  .log__in,
+  .sign__in {   
+    margin-top: 0px;
+  }
+
   .ts__tittle { 
+    line-height: 36px;
     margin-bottom: 0px;    
   }
 
   .ts__tittle__second {    
     font-size: 52px;
-    max-width: 500px;
-    display: block;
-    margin: 0 auto;
+    max-width: 900px;
     margin-bottom: 35px;   
     font-weight: 700; 
   }
+
   .ts__text {
     font-size: 24px;
     color: #ffffff;
     font-family: "Roboto";
     font-weight: 300;
-    text-align: center;
-    display: block;
-    margin: 0 auto;   
+    text-align: center; 
     margin-bottom: 25px;
   }
-  
-  .boxes__area {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 520px;
-    width: 490px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
 
-  .first__box{
-    order: 1;
-  }
-  .second__box{
-    order: 3;
-  }
-  .third__box{
-    order: 2;
-  }
-  .last__box
-  {
-    order: 4;
+  .boxes__area {    
+    height: 520px;
+    width: 490px;    
+    margin-bottom: 10px;
   }
 }
 
@@ -311,23 +242,16 @@ img {
   {
     width: 940px;
   }
-  .container{
-    min-width: 1200px;
-  }
   .tittle__section {
     background-image: url("../img/des-foto.png");       
   }
   .ts__tittle__second{
     width: 510px;
   }
-  .boxes__area {    
-    flex-direction: row;
-    flex-wrap: nowrap;   
-    align-items: center;
+  .boxes__area {      
     height: 265px;
     width: 940px;
-    margin: 0 auto;
     margin-bottom: 10px;
   }
 
-} 
+}
