@@ -12,9 +12,9 @@ img {
   object-fit: cover;
 }
 
-.container{
-  margin: 0 auto;
-  min-width: 320px
+.container{ 
+  min-width: 320px;  
+  max-width: 1200px;
 }
 
 .tittle__section {
@@ -27,6 +27,7 @@ img {
   text-align: center;
   height: 530px; 
   margin-bottom: 0px;  
+  min-width: 320px;  
 }
 
 .navigation {
@@ -110,6 +111,7 @@ img {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 70px;
+  min-width: 320px;  
 }
 
 .cs__tittle {  
@@ -133,7 +135,7 @@ img {
   overflow: hidden;
 }
 
-.box__img__wrapper {
+.box-imgwraper {
   display: inline-block;
   height: 122px;
   width: 122px;
@@ -238,11 +240,17 @@ img {
 
   .boxes__area {    
     height: 520px;
-    width: 490px;    
+    width: 490px;   
     margin-bottom: 10px;
   }
 }
-
+@media screen and (min-width: 990px) and (max-width:1200px)
+{
+  .boxes__area {    
+    /* height: 520px; */
+    width: 940px;      
+  }
+}
 @media (min-width:1200px)
 {
   .switch__box
