@@ -1,0 +1,7 @@
+// Text decoration
+@mixin text_decor ($font_size, $font_weight, $font_color, $font_family){
+  font-size: $font_size;
+  font-weight: $font_weight;
+  color: $font_color;
+  font-family: $font_family, sans-serif;
+}
